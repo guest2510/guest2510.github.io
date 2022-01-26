@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>秘密基地/音楽プレイヤー</title>
+  <style>
+    .parent ul{
+      display: none;
+    }
+    .active ul {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <img src="pic/music.png" alt="タイトル画像" width="500" height="150">
+  <p>
+    <strong>音楽プレイヤー</strong>
+  </p>
+  <p>
+  ↓音楽リスト↓
+  </p>
+  <ul>
+    
+    <div style="background-color:#EDF7FF;width:300px;padding:50px;border:3px solid #ccc">
+    <li class="parent" onclick="func1(this)"><strong><font color="orange">流行曲</font></strong>
+      <ul>
+        <li>残響散歌<audio src="music/zankyousanka.mp3" controls controlsList="nodownload"></audio ></li>
+      </ul>
+    </li>
+  </ul>
+  <script>
+    function func1(e) {
+      e.classList.toggle("active");
+    }
+  </script>
+</body>
+</html>
