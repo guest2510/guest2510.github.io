@@ -1,5 +1,45 @@
 <!DOCTYPE html>
-<html>
-<title>未定</title>
-test
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>秘密基地</title>
+  <style>
+    .parent ul{
+      display: none;
+    }
+    .active ul {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <img src="pic/title.png" alt="タイトル画像">
+  <p>
+    <strong>秘密基地へようこそ</strong>
+  </p>
+  <p>
+  ↓案内板↓
+  </p>
+  <ul>
+    <div style="background-color:#EDF7FF;width:300px;padding:30px;border:3px solid #ccc">
+    <li class="parent" onclick="func1(this)">ゲーム
+      <ul>
+        <li><font color="deepskyblue">準備中...</li>
+        <li>準備中...</font></li>
+      </ul>
+    </li>
+    <li class="parent" onclick="func1(this)">音楽プレイヤー
+      <ul>
+        <li><font color="deepskyblue">準備中...</li>
+        <li>準備中...</font></li>
+      </ul>
+    </li>
+  </ul>
+  <script>
+    function func1(e) {
+      e.classList.toggle("active");
+    }
+  </script>
+</body>
 </html>
