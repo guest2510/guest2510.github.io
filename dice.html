@@ -11,11 +11,11 @@
     <strong>サイコロ</strong>
   </p>
   <input type="button" value="サイコロを振る" onclick="func1()">
+  <p id="out"></p>
 <script type="text/javascript">
   
   var func1 = function () {
-    var no = Math.floor(Math.random() * 6)+1;
-    document.write(no);
+    document.getElementById("out").innerHTML = Math.floor(Math.random() * 6)+1;
   }
     function func1(e) {
       e.classList.toggle("active");
