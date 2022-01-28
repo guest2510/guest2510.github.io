@@ -22,8 +22,9 @@
 <script type="text/javascript">
   
   var func1 = function () {
+    var count;
+    count++;
     document.getElementById(count).innerHTML = Math.floor(Math.random() * 6)+1;
-    var count ++;
   }
     function func1(e) {
       e.classList.toggle("active");
